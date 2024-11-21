@@ -6,14 +6,14 @@ Not even v0: don't use it.
 
 ## Goal
 Typical `derdiedas` apps are guessing games to learn the German articles for the nominative case.
-Here the goal is similar, we want to provide a CLI application where based on open data, we display
-a German word on the nominative case and expect the user to input a the proper article.
+Here the goal is similar, we want to provide a CLI application, based on open data, where we display
+a German word on the nominative case and expect the user to input the proper article.
 
-In addition, we want to provide a colored coded helper which would be displayed on top of the word to guess,
-to indicate the probable article based on word start or ending.
+In addition, we want to provide a colored coded helper highlight on top of the word to guess,
+to indicate the most probable article based on known "guess-tips".
 For example, most word ending in `-or` correspond to the article `der`. 
-Thus, for words where this is true such as `Autor` the ending would be highlighted with the pre-configured `der` color.
-See the section below for the guess tips and their corresponding article.
+Thus, for words where this is true, such as `Autor`, the ending would be highlighted with the pre-configured `der` color.
+See the section below for the known guess tips and their corresponding article.
 This would be helpful to learn both the article and the logic to recognize them.
 Afterwards, we could also add an option to start the game with only exceptions as they must be memorized.
 
@@ -26,6 +26,7 @@ Afterwards, we could also add an option to start the game with only exceptions a
 - Display if it is correct or and error, then continue with the next guess.
 - Repeat until the number of guess is reached.
 - Display total score
+- Add sources used to create the guess-tips.
 
 ## Ideas for v1
 - [corpus] Collect the source of truth corpus from open data (e.g. wikitionnary)
