@@ -1,5 +1,9 @@
 # DerDieDas
 
+## Status
+
+Not even v0: don't use it.
+
 ## Goal
 Typical `derdiedas` apps are guessing games to learn the German articles for the nominative case.
 Here the goal is similar, we want to provide a CLI application where based on open data, we display
